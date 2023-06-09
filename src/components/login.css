@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+.cover {
+    background-color: azure;
+    width: 30em;
+    height: 35em;
+    position: relative;
+    border-radius: 1em;
+    box-shadow: 0 0.188em 1.550em rgba(156, 156, 156);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alt-login {
+    width: 80%;
+    height: 3em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.alt-login div {
+    width: 45%;
+    height: 90%;
+    border-radius: 0.25em;
+    background-color: black;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.facebook {
+    background-image: url('');
+}
+
+.instagram {
+    background-image: url('');
+}
+
+input {
+    border: none;
+    background-color: rgb(229, 226, 226);
+    height: 4em;
+    width: 80%;
+    border-radius: 0.25em;
+    text-align: center;
+    padding: 2em;
+}
+
+input:focus {
+    outline-color: rgb(32, 177, 255);
+}
+
+.login__btn {
+    width: 40%;
+    height: 3em;
+    background-color: rgb(32, 177, 255);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    border-radius: 0.25em;
+    cursor: pointer;
+}
+
+.login__btn:hover {
+    transform: scale(1.30);
+}
+
+.text {
+    position: relative;
+    bottom: -2em;
+}
+
+.hide {
+    position: absolute;
+    transform: scale(0);
+}
+
+.login-poup {
+    position: absolute;
+    width: 30em;
+    height: 30em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.25em;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    transform: scale(1);
+    transition: 1.5s;
+}
